@@ -1,0 +1,43 @@
+school,gender,gpa
+Arts,Female,3.84
+Arts,Male,3.75
+Arts,Not stated,3.85
+Biological Sciences,Female,4.00
+Biological Sciences,Male,3.99
+Biological Sciences,Not stated,4.06
+Business,Female,4.16
+Business,Male,4.11
+Business,Not stated,N/A
+Education,Female,3.94
+Education,Male,3.83
+Education,Not stated,N/A
+Engineering,Female,4.08
+Engineering,Male,4.03
+Engineering,Not stated,4.11
+Humanities,Female,3.96
+Humanities,Male,3.95
+Humanities,Not stated,N/A
+Info and Computer Sci,Female,4.09
+Info and Computer Sci,Male,4.06
+Info and Computer Sci,Not stated,3.96
+Nursing Science,Female,4.21
+Nursing Science,Male,4.18
+Nursing Science,Not stated,N/A
+Pharmaceutical Sciences,Female,4.01
+Pharmaceutical Sciences,Male,3.99
+Pharmaceutical Sciences,Not stated,4.20
+Physical Sciences,Female,3.96
+Physical Sciences,Male,3.88
+Physical Sciences,Not stated,4.06
+Public Health,Female,3.99
+Public Health,Male,3.92
+Public Health,Not stated,N/A
+Social Ecology,Female,3.96
+Social Ecology,Male,3.89
+Social Ecology,Not stated,N/A
+Social Sciences,Female,3.91
+Social Sciences,Male,3.90
+Social Sciences,Not stated,3.75
+Undergrad Education,Female,3.94
+Undergrad Education,Male,3.87
+Undergrad Education,Not stated,4.00

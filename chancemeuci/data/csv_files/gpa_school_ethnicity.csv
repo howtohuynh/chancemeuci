@@ -1,0 +1,99 @@
+school,ethnicity,gpa
+Arts,American Indian / Alaskan Native,N/A
+Arts,Asian / Pacific Islander,3.8
+Arts,"Black, non-Hispanic",3.64
+Arts,Hispanic,3.77
+Arts,"White, non-Hispanic",3.95
+Arts,Unknown / declined to state,N/A
+Arts,International student,3.64
+Biological Sciences,American Indian / Alaskan Native,N/A
+Biological Sciences,Asian / Pacific Islander,4.04
+Biological Sciences,"Black, non-Hispanic",3.89
+Biological Sciences,Hispanic,3.96
+Biological Sciences,"White, non-Hispanic",4.03
+Biological Sciences,Unknown / declined to state,4.03
+Biological Sciences,International student,3.81
+Business,American Indian / Alaskan Native,N/A
+Business,Asian / Pacific Islander,4.15
+Business,"Black, non-Hispanic",N/A
+Business,Hispanic,4.14
+Business,"White, non-Hispanic",4.19
+Business,Unknown / declined to state,N/A
+Business,International student,4.06
+Education,American Indian / Alaskan Native,N/A
+Education,Asian / Pacific Islander,3.97
+Education,"Black, non-Hispanic",N/A
+Education,Hispanic,3.91
+Education,"White, non-Hispanic",4
+Education,Unknown / declined to state,N/A
+Education,International student,3.84
+Engineering,American Indian / Alaskan Native,N/A
+Engineering,Asian / Pacific Islander,4.04
+Engineering,"Black, non-Hispanic",3.97
+Engineering,Hispanic,4.09
+Engineering,"White, non-Hispanic",4.06
+Engineering,Unknown / declined to state,4.08
+Engineering,International student,3.89
+Humanities,American Indian / Alaskan Native,N/A
+Humanities,Asian / Pacific Islander,4.01
+Humanities,"Black, non-Hispanic",4.08
+Humanities,Hispanic,3.95
+Humanities,"White, non-Hispanic",4.02
+Humanities,Unknown / declined to state,N/A
+Humanities,International student,3.83
+Info and Computer Sci,American Indian / Alaskan Native,N/A
+Info and Computer Sci,Asian / Pacific Islander,4.09
+Info and Computer Sci,"Black, non-Hispanic",3.92
+Info and Computer Sci,Hispanic,4.04
+Info and Computer Sci,"White, non-Hispanic",4.11
+Info and Computer Sci,Unknown / declined to state,4.14
+Info and Computer Sci,International student,3.96
+Nursing Science,American Indian / Alaskan Native,N/A
+Nursing Science,Asian / Pacific Islander,4.25
+Nursing Science,"Black, non-Hispanic",3.92
+Nursing Science,Hispanic,4.15
+Nursing Science,"White, non-Hispanic",N/A
+Nursing Science,Unknown / declined to state,N/A
+Nursing Science,International student,N/A
+Pharmaceutical Sciences,American Indian / Alaskan Native,N/A
+Pharmaceutical Sciences,Asian / Pacific Islander,4.04
+Pharmaceutical Sciences,"Black, non-Hispanic",N/A
+Pharmaceutical Sciences,Hispanic,3.94
+Pharmaceutical Sciences,"White, non-Hispanic",3.96
+Pharmaceutical Sciences,Unknown / declined to state,N/A
+Pharmaceutical Sciences,International student,3.87
+Physical Sciences,American Indian / Alaskan Native,N/A
+Physical Sciences,Asian / Pacific Islander,4
+Physical Sciences,"Black, non-Hispanic",3.76
+Physical Sciences,Hispanic,3.96
+Physical Sciences,"White, non-Hispanic",4.01
+Physical Sciences,Unknown / declined to state,3.97
+Physical Sciences,International student,3.86
+Public Health,American Indian / Alaskan Native,N/A
+Public Health,Asian / Pacific Islander,4
+Public Health,"Black, non-Hispanic",3.89
+Public Health,Hispanic,3.94
+Public Health,"White, non-Hispanic",4.05
+Public Health,Unknown / declined to state,N/A
+Public Health,International student,3.92
+Social Ecology,American Indian / Alaskan Native,N/A
+Social Ecology,Asian / Pacific Islander,3.97
+Social Ecology,"Black, non-Hispanic",3.7
+Social Ecology,Hispanic,3.97
+Social Ecology,"White, non-Hispanic",3.97
+Social Ecology,Unknown / declined to state,4.05
+Social Ecology,International student,3.8
+Social Sciences,American Indian / Alaskan Native,N/A
+Social Sciences,Asian / Pacific Islander,3.97
+Social Sciences,"Black, non-Hispanic",3.78
+Social Sciences,Hispanic,3.89
+Social Sciences,"White, non-Hispanic",4
+Social Sciences,Unknown / declined to state,4.05
+Social Sciences,International student,3.86
+Undergrad Education,American Indian / Alaskan Native,N/A
+Undergrad Education,Asian / Pacific Islander,3.97
+Undergrad Education,"Black, non-Hispanic",3.73
+Undergrad Education,Hispanic,3.9
+Undergrad Education,"White, non-Hispanic",3.93
+Undergrad Education,Unknown / declined to state,3.65
+Undergrad Education,International student,3.85

@@ -1,0 +1,82 @@
+school,major,gpa
+Arts,Art,3.9
+Arts,Dance,3.72
+Arts,Drama,4
+Arts,Music - Performance,N/A
+Arts,Music,3.52
+Arts,Studio Art,N/A
+Arts,Undeclared,3.83
+Biological Sciences,Biological Sciences,4
+Biological Sciences,Biology/Education,3.95
+Biological Sciences,Ecology and Evolutionary Biology,3.91
+Business,Business Administration,4.15
+Education,Education Sciences,3.92
+Engineering,Aerospace Engineering,4.07
+Engineering,Biomedical Engineering,4.07
+Engineering,Biomedical Engineering: Premed,4.18
+Engineering,Chemical Engineering,4.14
+Engineering,Civil Engineering,4.01
+Engineering,Computer Engineering,4
+Engineering,Computer Science and Engineering,3.99
+Engineering,Electrical Engineering,3.98
+Engineering,Environmental Engineering,4.05
+Engineering,Materials Science Engineering,3.98
+Engineering,Mechanical Engineering,4.09
+Engineering,Undeclared,4.09
+Humanities,Art History,N/A
+Humanities,Chinese Language and Literature,N/A
+Humanities,Chinese Studies,N/A
+Humanities,Comparative Literature,N/A
+Humanities,English,4.01
+Humanities,European Studies,N/A
+Humanities,Film and Media Studies,3.91
+Humanities,French,N/A
+Humanities,Global Cultures,3.87
+Humanities,History,3.93
+Humanities,Japanese Lanuage and Literature,N/A
+Humanities,Korean Literature and Culture,N/A
+Humanities,Literary Journalism,3.92
+Humanities,Philosophy,3.84
+Humanities,Spanish,N/A
+Humanities,Undeclared,3.95
+Info and Computer Sci,Biomedical Computing,N/A
+Info and Computer Sci,Business Information Management,4.07
+Info and Computer Sci,Computer Game Science,4.11
+Info and Computer Sci,Computer Science,4.08
+Info and Computer Sci,Computer Science and Engineering,4.02
+Info and Computer Sci,Data Science,4.1
+Info and Computer Sci,Informatics,4.11
+Info and Computer Sci,Information and Computer Science,N/A
+Info and Computer Sci,Software Engineering,4.09
+Info and Computer Sci,Undeclared,3.98
+Nursing Science,Nursing Science,4.21
+Pharmaceutical Sciences,Pharmaceutical Sciences,4
+Physical Sciences,Applied Physics,3.93
+Physical Sciences,Chemistry,3.99
+Physical Sciences,Earth and Environmental Sciences,N/A
+Physical Sciences,Earth and Environmental Studies,N/A
+Physical Sciences,Earth System Science,4
+Physical Sciences,Environmental Science,3.97
+Physical Sciences,Mathematics,3.89
+Physical Sciences,Physics,3.9
+Physical Sciences,Undeclared,3.87
+Public Health,Public Health Policy,3.93
+Public Health,Public Health Sciences,3.98
+Social Ecology,"Criminology, Law and Society",3.95
+Social Ecology,Psychology and Social Behavior,3.95
+Social Ecology,Social Ecology,4.05
+Social Ecology,Undeclared,3.9
+Social Ecology,Urban Studies,3.73
+Social Sciences,Anthropology,3.98
+Social Sciences,Business Economics,3.88
+Social Sciences,Cognitive Sciences,3.98
+Social Sciences,Economics,3.92
+Social Sciences,International Studies,3.88
+Social Sciences,Political Science,3.92
+Social Sciences,Psychology ,3.9
+Social Sciences,Quantitative Economics,3.9
+Social Sciences,Social Policy and Public Service,4
+Social Sciences,Social Science,N/A
+Social Sciences,Sociology,3.9
+Social Sciences,Undeclared,3.9
+Undergrad Education,Undeclared,3.9

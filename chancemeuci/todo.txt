@@ -1,0 +1,5 @@
+- add GPA csv
+    - develop further chances calculator w/ SAT and GPA
+- create tables to display stats/comparison on right side. maybe link to another page?
+- Fix capitalization in left side box
+- finish other views

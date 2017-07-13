@@ -1,0 +1,99 @@
+school,ethnicity,verbal,math,verbal + math,writing,verbal + math + writing
+Arts,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Arts,Asian / Pacific Islander,588,621,1209,583,1792
+Arts,"Black, non-Hispanic",590,558,1148,590,1738
+Arts,Hispanic,591,546,1137,550,1687
+Arts,"White, non-Hispanic",621,592,1213,605,1818
+Arts,Unknown / declined to state,N/A,N/A,N/A,N/A,N/A
+Arts,International student,543,739,1281,566,1847
+Biological Sciences,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Biological Sciences,Asian / Pacific Islander,604,630,1233,602,1835
+Biological Sciences,"Black, non-Hispanic",583,567,1150,567,1718
+Biological Sciences,Hispanic,549,547,1096,537,1633
+Biological Sciences,"White, non-Hispanic",612,611,1223,595,1818
+Biological Sciences,Unknown / declined to state,621,638,1259,620,1878
+Biological Sciences,International student,507,715,1222,563,1785
+Business,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Business,Asian / Pacific Islander,596,656,1252,611,1863
+Business,"Black, non-Hispanic",583,567,1150,567,1718
+Business,Hispanic,534,561,1095,548,1643
+Business,"White, non-Hispanic",588,629,1217,591,1807
+Business,Unknown / declined to state,N/A,N/A,N/A,N/A,N/A
+Business,International student,547,723,1270,577,1847
+Education,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Education,Asian / Pacific Islander,587,633,1220,597,1817
+Education,"Black, non-Hispanic",N/A,N/A,N/A,N/A,N/A
+Education,Hispanic,519,523,1043,506,1549
+Education,"White, non-Hispanic",620,558,1178,637,1815
+Education,Unknown / declined to state,N/A,N/A,N/A,N/A,N/A
+Education,International student,490,637,1163,557,1719
+Engineering,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Engineering,Asian / Pacific Islander,629,688,1316,622,1938
+Engineering,"Black, non-Hispanic",561,611,1172,549,1721
+Engineering,Hispanic,575,611,1185,554,1740
+Engineering,"White, non-Hispanic",650,685,1335,618,1954
+Engineering,Unknown / declined to state,689,730,1419,658,2077
+Engineering,International student,521,734,1255,577,1832
+Humanities,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Humanities,Asian / Pacific Islander,617,618,1235,614,1849
+Humanities,"Black, non-Hispanic",566,524,1090,569,1659
+Humanities,Hispanic,571,525,1096,553,1650
+Humanities,"White, non-Hispanic",663,600,1263,636,1899
+Humanities,Unknown / declined to state,N/A,N/A,N/A,N/A,N/A
+Humanities,International student,499,682,1180,568,1748
+Info and Computer Sci,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Info and Computer Sci,Asian / Pacific Islander,644,692,1336,628,1964
+Info and Computer Sci,"Black, non-Hispanic",603,586,1189,575,1764
+Info and Computer Sci,Hispanic,591,599,1190,560,1751
+Info and Computer Sci,"White, non-Hispanic",660,677,1337,634,1970
+Info and Computer Sci,Unknown / declined to state,641,689,1330,634,1963
+Info and Computer Sci,International student,574,729,1303,615,1918
+Nursing Science,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Nursing Science,Asian / Pacific Islander,632,695,1327,645,1972
+Nursing Science,"Black, non-Hispanic",N/A,N/A,N/A,N/A,N/A
+Nursing Science,Hispanic,640,607,1247,621,1868
+Nursing Science,"White, non-Hispanic",N/A,N/A,N/A,N/A,N/A
+Nursing Science,Unknown / declined to state,N/A,N/A,N/A,N/A,N/A
+Nursing Science,International student,N/A,N/A,N/A,N/A,N/A
+Pharmaceutical Sciences,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Pharmaceutical Sciences,Asian / Pacific Islander,585,625,1210,578,1787
+Pharmaceutical Sciences,"Black, non-Hispanic",N/A,N/A,N/A,N/A,N/A
+Pharmaceutical Sciences,Hispanic,554,554,1108,558,1666
+Pharmaceutical Sciences,"White, non-Hispanic",531,565,1096,525,1621
+Pharmaceutical Sciences,Unknown / declined to state,N/A,N/A,N/A,N/A,N/A
+Pharmaceutical Sciences,International student,470,726,1196,548,1744
+Physical Sciences,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Physical Sciences,Asian / Pacific Islander,595,678,1273,602,1878
+Physical Sciences,"Black, non-Hispanic",541,541,1083,530,1613
+Physical Sciences,Hispanic,543,582,1125,528,1653
+Physical Sciences,"White, non-Hispanic",599,645,1244,602,1846
+Physical Sciences,Unknown / declined to state,619,689,1308,594,1901
+Physical Sciences,International student,497,730,1227,568,1795
+Public Health,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Public Health,Asian / Pacific Islander,586,615,1201,596,1797
+Public Health,"Black, non-Hispanic",531,528,1058,503,1562
+Public Health,Hispanic,516,508,1024,512,1536
+Public Health,"White, non-Hispanic",569,593,1163,589,1752
+Public Health,Unknown / declined to state,N/A,N/A,N/A,N/A,N/A
+Public Health,International student,559,684,1243,527,1770
+Social Ecology,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Social Ecology,Asian / Pacific Islander,587,604,1191,596,1787
+Social Ecology,"Black, non-Hispanic",544,502,1046,535,1581
+Social Ecology,Hispanic,547,526,1073,533,1606
+Social Ecology,"White, non-Hispanic",629,583,1212,608,1821
+Social Ecology,Unknown / declined to state,652,654,1306,652,1958
+Social Ecology,International student,514,678,1193,575,1767
+Social Sciences,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Social Sciences,Asian / Pacific Islander,598,632,1230,599,1829
+Social Sciences,"Black, non-Hispanic",552,532,1085,534,1619
+Social Sciences,Hispanic,550,534,1084,538,1622
+Social Sciences,"White, non-Hispanic",605,608,1213,604,1817
+Social Sciences,Unknown / declined to state,563,655,1218,605,1823
+Social Sciences,International student,506,699,1205,567,1772
+Undergrad Education,American Indian / Alaskan Native,N/A,N/A,N/A,N/A,N/A
+Undergrad Education,Asian / Pacific Islander,591,624,1215,586,1801
+Undergrad Education,"Black, non-Hispanic",529,523,1052,519,1571
+Undergrad Education,Hispanic,533,538,1071,522,1593
+Undergrad Education,"White, non-Hispanic",586,595,1181,576,1757
+Undergrad Education,Unknown / declined to state,550,597,1147,515,1663
+Undergrad Education,International student,501,696,1197,551,1748

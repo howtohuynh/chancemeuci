@@ -1,0 +1,8 @@
+ethnicity,applied,admitted,enrolled,selectivity_rate,yield_rate,gpa,verbal,math,verbal + math,writing,verbal + math + writing
+American Indian / Alaskan Native,292,94,13,32.20%,13.80%,3.98,596,611,1207,601,1808
+Asian / Pacific Islander,"25,104","11,334","2,373",45.10%,20.90%,4.02,608,649,1256,605,1861
+"Black,  non-Hispanic","3,359",864,184,25.70%,21.30%,3.84,557,548,1105,543,1649
+Hispanic,"21,069","6,184","1,669",29.40%,27.00%,3.96,551,554,1106,537,1643
+"White,  non-Hispanic","11,381","4,849",732,42.60%,15.10%,4.02,620,627,1248,604,1852
+Unknown / declined to state,872,118,95,45.20%,13.50%,4.01,616,657,1273,610,1883
+International student,"14,675","7,434","1,463",50.70%,19.70%,3.86,507,710,1217,567,1784
