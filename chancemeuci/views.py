@@ -9,7 +9,7 @@ from chancemeuci.data.calculator import calculate
 
 appliedList = ['applied', 'admitted', 'enrolled', 'selectivity_rate', 'yield_rate', 'gpa', 'verbal', 'math',
                'verbal + math', 'writing', 'verbal + math + writing']
-
+appliedList2 = ['applied', 'admitted', 'enrolled', 'selectivity_rate', 'yield_rate']
 highschoolList = ['admitted']
 
 school = csv_to_dict('chancemeuci/data/csv_files/school.csv', appliedList)
@@ -20,6 +20,10 @@ residency = csv_to_dict('chancemeuci/data/csv_files/residency.csv', appliedList[
 ethnicity = csv_to_dict('chancemeuci/data/csv_files/ethnicity.csv', appliedList)
 school_gender = csv_to_dict('chancemeuci/data/csv_files/school_gender.csv', appliedList)
 school_ethnicity = csv_to_dict('chancemeuci/data/csv_files/school_ethnicity.csv', appliedList)
+uc_gpa = csv_to_dict('chancemeuci/data/csv_files/gpa.csv', appliedList2)
+sat_verbal = csv_to_dict('chancemeuci/data/csv_files/verbal.csv', appliedList2)
+sat_math = csv_to_dict('chancemeuci/data/csv_files/math.csv', appliedList2)
+sat_writing = csv_to_dict('chancemeuci/data/csv_files/writing.csv', appliedList2)
 
 
 class index(CreateView):
@@ -37,17 +41,16 @@ class index(CreateView):
         if form.is_valid():
             form_data = form.cleaned_data
             form.save()
-        result = []
-        x = form_data['major'].split(" | ")[0]
-        y = form_data['major'].split(" | ")[1]
-        result.append(school[x])
-        result.append(major[x][y])
-        result.append(gender[form_data['gender']])
-        result.append(residency[form_data['residency']])
-        result.append(ethnicity[form_data['ethnicity']])
-        result.append(school_gender[x][form_data['gender']])
-        result.append(school_ethnicity[x][form_data['ethnicity']])
-        args = {'form': form, 'form_data': result, 'chances': calculate(result)}
+        l = lowWeight(form_data)
+        h = highWeight(form_data)
+        data = l
+        data.extend(h)
+        cl = calculate(l)
+        ch = calculate(h)
+        r = cl[0]
+        r.extend(ch[0])
+        chances = "{0:.2f}%".format(((ch[1] * 2) + cl[1])/3)
+        args = {'form': form, 'form_data': form_data, 'range': sorted(r), 'chances': chances, 'ld': l, 'hd': h}
         return render(request, self.template_name, args)
 
 
@@ -62,4 +65,25 @@ def comments(request):
 
 def notes(request):
     return render(request, 'chancemeuci/notes.html')
+
+def lowWeight(d: dict) -> float:
+    low_weight = []
+    x = d['major'].split(" | ")[0]
+    y = d['major'].split(" | ")[1]
+    low_weight.append(school[x])
+    low_weight.append(major[x][y])
+    low_weight.append(gender[d['gender']])
+    low_weight.append(ethnicity[d['ethnicity']])
+    low_weight.append(school_gender[x][d['gender']])
+    low_weight.append(school_ethnicity[x][d['ethnicity']])
+    low_weight.append(residency[d['residency']])
+    return low_weight
+
+def highWeight(d: dict) -> float:
+    high_weight = []
+    high_weight.append(uc_gpa[d['uc_gpa']])
+    high_weight.append(sat_verbal[d['sat_verbal']])
+    high_weight.append(sat_math[d['sat_math']])
+    high_weight.append(sat_writing[d['sat_writing']])
+    return high_weight
 

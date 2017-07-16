@@ -229,16 +229,31 @@ HIGH_SCHOOL = (
     ('OTHER/NOT LISTED', 'OTHER/NOT LISTED')
 )
 
+UC_GPA = (
+    ('4.00 and above', '4.00 and above'),
+    ('3.70-3.99', '3.70-3.99'),
+    ('3.30-3.69', '3.30-3.69'),
+    ('3.00-3.29', '3.00-3.29'),
+    ('Below 3.00', 'Below 3.00')
+)
+
+SAT = (
+    ('700-800', '700-800'),
+    ('600-690', '600-690'),
+    ('500-590', '500-590'),
+    ('400-490', '400-490'),
+    ('Below 400', 'Below 400')
+)
 class Applicant(models.Model):
     major = models.CharField(max_length = 128, choices = MAJOR)
     gender = models.CharField(max_length = 128, choices = GENDER)
     ethnicity = models.CharField(max_length = 128, choices = ETHNICITY)
     residency = models.CharField(max_length = 128, choices = RESIDENCY)
     high_school = models.CharField(max_length = 128, choices = HIGH_SCHOOL)
-    uc_gpa = models.CharField(max_length = 4)
-    sat_math = models.CharField(max_length = 3)
-    sat_verbal = models.CharField(max_length = 3)
-    sat_writing = models.CharField(max_length = 3)
+    uc_gpa = models.CharField(max_length = 128, choices = UC_GPA)
+    sat_math = models.CharField(max_length = 128, choices = SAT)
+    sat_verbal = models.CharField(max_length = 128, choices = SAT)
+    sat_writing = models.CharField(max_length = 128, choices = SAT)
 
     def get_absolute_url(self):
         return reverse('chancemeuci:index')

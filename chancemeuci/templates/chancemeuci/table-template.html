@@ -1,0 +1,27 @@
+<table class="table table-sm table-hover table-bordered">
+  <thead>
+    <tr>
+        <th></th>
+        <th>Applied</th>
+        <th>Admitted</th>
+        <th>Enrolled</th>
+        <th>Selectivity</th>
+        <th>Yield</th>
+        <th>GPA</th>
+        <th>Verbal</th>
+        <th>Math</th>
+        <th>Writing</th>
+    </tr>
+  </thead>
+  <tbody>
+{#    <tr>#}
+        {% for field in ld %}
+                <tr>
+            {% for key, value in field.items %}
+                <td> {{ value }} </td>
+            {% endfor%}
+                </tr>
+        {% endfor %}
+{#    </tr>#}
+  </tbody>
+</table>
