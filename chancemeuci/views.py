@@ -8,7 +8,7 @@ from chancemeuci.data.calculator import calculate
 
 
 appliedList = ['applied', 'admitted', 'enrolled', 'selectivity_rate', 'yield_rate', 'gpa', 'verbal', 'math',
-               'verbal + math', 'writing', 'verbal + math + writing']
+               'writing']
 appliedList2 = ['applied', 'admitted', 'enrolled', 'selectivity_rate', 'yield_rate']
 highschoolList = ['admitted']
 
@@ -50,7 +50,10 @@ class index(CreateView):
         r = cl[0]
         r.extend(ch[0])
         chances = "{0:.2f}%".format(((ch[1] * 2) + cl[1])/3)
-        args = {'form': form, 'form_data': form_data, 'range': sorted(r), 'chances': chances, 'ld': l, 'hd': h}
+        r.sort()
+        chance_string = "Your overall chance is {}, but can range anywhere from {}% to {}%.".format(chances, r[0], r[-1])
+        hs = highSchool(form_data)
+        args = {'form': form, 'form_data': form_data, 'min': r[0], 'max': r[-1], 'chances': chance_string, 'ld': l, 'hs': hs}
         return render(request, self.template_name, args)
 
 
@@ -70,20 +73,27 @@ def lowWeight(d: dict) -> float:
     low_weight = []
     x = d['major'].split(" | ")[0]
     y = d['major'].split(" | ")[1]
-    low_weight.append(school[x])
-    low_weight.append(major[x][y])
-    low_weight.append(gender[d['gender']])
-    low_weight.append(ethnicity[d['ethnicity']])
-    low_weight.append(school_gender[x][d['gender']])
-    low_weight.append(school_ethnicity[x][d['ethnicity']])
-    low_weight.append(residency[d['residency']])
+
+    low_weight.append((('School', x), school[x]))
+    low_weight.append((('Major', y), major[x][y]))
+    low_weight.append((('Gender', d['gender']), gender[d['gender']]))
+    low_weight.append((('Ethnicity', d['ethnicity']), ethnicity[d['ethnicity']]))
+    low_weight.append((('School & Gender', x + " & " + d['gender']), school_gender[x][d['gender']]))
+    low_weight.append((('School & Ethnicity', x + " & " + d['ethnicity']), school_ethnicity[x][d['ethnicity']]))
+    low_weight.append((('Residency', d['residency']), residency[d['residency']]))
     return low_weight
 
 def highWeight(d: dict) -> float:
     high_weight = []
-    high_weight.append(uc_gpa[d['uc_gpa']])
-    high_weight.append(sat_verbal[d['sat_verbal']])
-    high_weight.append(sat_math[d['sat_math']])
-    high_weight.append(sat_writing[d['sat_writing']])
+    high_weight.append((('UC GPA', d['uc_gpa']), uc_gpa[d['uc_gpa']]))
+    high_weight.append((('SAT Verbal', d['sat_verbal']), sat_verbal[d['sat_verbal']]))
+    high_weight.append((('SAT Math', d['sat_math']), sat_math[d['sat_math']]))
+    high_weight.append((('SAT Writing', d['sat_writing']), sat_writing[d['sat_writing']]))
     return high_weight
 
+def highSchool(d: dict) -> str:
+    if d['high_school'] != 'OTHER / NOT LISTED':
+        string = "In 2016, {} people from {} enrolled at UC Irvine.".format(high_school[d['high_school']]['admitted'], d['high_school'].title())
+    else:
+        string = ''
+    return string

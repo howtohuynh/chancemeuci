@@ -27,6 +27,7 @@ def csv_to_dict(file: str, dictKeyList: list) -> dict:
                 result[line[0]] = list_to_dict(line[1:], dictKeyList)
     return result
 
+
 # appliedList = ['applied', 'admitted', 'enrolled', 'selectivity_rate', 'yield_rate']
 # satList = ['verbal', 'math', 'verbal + math', 'writing', 'verbal + math + writing']
 # gpaList = ['gpa']

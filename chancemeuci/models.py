@@ -119,6 +119,7 @@ RESIDENCY = (
     ('International students', 'International students')
 )
 HIGH_SCHOOL = (
+    ('OTHER / NOT LISTED', 'OTHER / NOT LISTED'),
     ('ABRAHAM LINCOLN SR HIGH SCHOOL', 'ABRAHAM LINCOLN SR HIGH SCHOOL'),
     ('ALAMEDA HIGH SCHOOL', 'ALAMEDA HIGH SCHOOL'),
     ('ALHAMBRA HIGH SCHOOL', 'ALHAMBRA HIGH SCHOOL'),
@@ -226,7 +227,6 @@ HIGH_SCHOOL = (
     ('WESTVIEW', 'WESTVIEW'),
     ('WOODBRIDGE HIGH SCHOOL', 'WOODBRIDGE HIGH SCHOOL'),
     ('WOODROW WILSON HIGH SCHOOL', 'WOODROW WILSON HIGH SCHOOL'),
-    ('OTHER/NOT LISTED', 'OTHER/NOT LISTED')
 )
 
 UC_GPA = (
@@ -251,8 +251,8 @@ class Applicant(models.Model):
     residency = models.CharField(max_length = 128, choices = RESIDENCY)
     high_school = models.CharField(max_length = 128, choices = HIGH_SCHOOL)
     uc_gpa = models.CharField(max_length = 128, choices = UC_GPA)
+    sat_verbal = models.CharField(max_length=128, choices=SAT)
     sat_math = models.CharField(max_length = 128, choices = SAT)
-    sat_verbal = models.CharField(max_length = 128, choices = SAT)
     sat_writing = models.CharField(max_length = 128, choices = SAT)
 
     def get_absolute_url(self):

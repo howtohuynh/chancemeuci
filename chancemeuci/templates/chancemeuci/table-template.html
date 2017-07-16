@@ -1,7 +1,10 @@
-<table class="table table-sm table-hover table-bordered">
+
+
+<table class="table table-sm table-hover">
   <thead>
     <tr>
-        <th></th>
+        <th>Description</th>
+        <th>Your Stats</th>
         <th>Applied</th>
         <th>Admitted</th>
         <th>Enrolled</th>
@@ -16,12 +19,29 @@
   <tbody>
 {#    <tr>#}
         {% for field in ld %}
-                <tr>
-            {% for key, value in field.items %}
-                <td> {{ value }} </td>
-            {% endfor%}
-                </tr>
+            <tr>
+            {% for x in field %}
+                {% if x|length == 2 %}
+                    {% for value in x %}
+                        <td> {{ value }}</td>
+                    {% endfor%}
+                {% elif x|length == 5 %}
+                    {% for key, value in x.items %}
+                        <td> {{ value }}</td>
+                        {% endfor %}
+                    <td> {{ "N/A" }}</td>
+                    <td> {{ "N/A" }}</td>
+                    <td> {{ "N/A" }}</td>
+                    <td> {{ "N/A" }}</td>
+                {% else %}
+                    {% for key, value in x.items %}
+                        <td> {{ value }}</td>
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+            </tr>
         {% endfor %}
 {#    </tr>#}
   </tbody>
 </table>
+

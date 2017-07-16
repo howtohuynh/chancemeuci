@@ -2,14 +2,14 @@
 {% block body %}
     <div class = "container-fluid">
         <div class = "row">
-            <div class="col-sm-5 col-sm-offset-0">
+            <div class="col-sm-4 col-sm-offset-0">
               <div class="panel panel-default">
                     <div class = "panel-body">
                         <form class = "form-horizontal" action = "" method = "post" enctype = "multipart/form-data">
                             {% csrf_token %}
                             {% include 'chancemeuci/form-template.html' %}
                             <div class = "form-group">
-                                <div class = "col-sm-offset-9 col-sm-3">
+                                <div class = "col-sm-offset-6 col-sm-3">
                                     <button type = "submit" class = "btn btn-success"> Chance Me! </button>
                                 </div>
                             </div>
@@ -17,18 +17,21 @@
                     </div>
                 </div>
             </div>
-            <div class = "col-sm-7">
+
+            <div class = "col-sm-8">
                 <div  class="panel panel-default">
-{#                    <form class = "form-horizontal" action = "" method = "post" enctype = "multipart/form-data">#}
-{#                    {{ chances }}<br />#}
-{#                    {{ range }} <br />#}
-{#                    {{ form_data }} <br />#}
-                    {{ ld }} <br />
-                    {{ hd }}
-{#                        {% csrf_token %}#}
-                        {% include 'chancemeuci/table-template.html' %}
-{#                    </form>#}
+                    <h3>
+                        <p class="text-center">{{ chances }}</p>
+                    </h3>
+                    <h4>
+                        <p class="text-center">{{ hs }}</p><br/>
+                    </h4>
+                    {% include 'chancemeuci/table-template.html' %}
                 </div>
+            </div>
+            <div>
+                <p class="text-center"> For more information regarding this analysis, please visit the Notes section. </p>
+                <p class="text-center"> © Kenny Huynh 2017 </p>
             </div>
         </div>
     </div>
