@@ -1,0 +1,13 @@
+body{
+    background: white url("../chancemeuci/static/chancemeuci/images/background.png");
+}
+
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-brand{
+    font-family: 'Cinzel', cursive;
+}
+
