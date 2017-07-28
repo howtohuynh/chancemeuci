@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d2458-c906-4ce2-ba72-4527634df351" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chancemeuci/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chancemeuci/migrations/0002_auto_20170708_1545.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chancemeuci/migrations/0003_auto_20170712_1930.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chancemeuci/migrations/0004_auto_20170712_1953.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chancemeuci/migrations/__init__.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chancemeuci/data/csv_files/New Microsoft Excel Worksheet.xlsx" afterPath="$PROJECT_DIR$/chancemeuci/data/csv_files/New Microsoft Excel Worksheet.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chancemeuci/static/chancemeuci/images/background.png" afterPath="$PROJECT_DIR$/chancemeuci/static/chancemeuci/images/background.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
@@ -90,6 +85,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chancemeuci/data/csv_files/writing.csv" afterPath="$PROJECT_DIR$/chancemeuci/data/csv_files/writing.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chancemeuci/data/ctd.py" afterPath="$PROJECT_DIR$/chancemeuci/data/ctd.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chancemeuci/forms.py" afterPath="$PROJECT_DIR$/chancemeuci/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chancemeuci/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/chancemeuci/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chancemeuci/migrations/__init__.py" afterPath="$PROJECT_DIR$/chancemeuci/migrations/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chancemeuci/models.py" afterPath="$PROJECT_DIR$/chancemeuci/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chancemeuci/templates/chancemeuci/applicant_form.html" afterPath="$PROJECT_DIR$/chancemeuci/templates/chancemeuci/applicant_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chancemeuci/templates/chancemeuci/base.html" afterPath="$PROJECT_DIR$/chancemeuci/templates/chancemeuci/base.html" />
