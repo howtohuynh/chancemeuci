@@ -25,9 +25,9 @@ SECRET_KEY = '64njz^qhzlb6kuf_nk(96iwfso5rxftd#kyjs(8x6_zlhp$-(%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['chancemeuci.herokuapp.com', 'http://127.0.0.1/']
+ALLOWED_HOSTS = ['chancemeuci.herokuapp.com', 'http://127.0.0.1/']
 #
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
