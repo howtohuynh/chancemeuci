@@ -1,1 +1,1 @@
-eb: gunicorn howtohuynh.wsgi --log-file -
+web: gunicorn howtohuynh.wsgi --log-file -
