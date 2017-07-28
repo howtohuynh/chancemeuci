@@ -25,9 +25,9 @@ SECRET_KEY = '64njz^qhzlb6kuf_nk(96iwfso5rxftd#kyjs(8x6_zlhp$-(%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['chancemeuci.herokuapp.com']
-
-
+# ALLOWED_HOSTS = ['chancemeuci.herokuapp.com', 'http://127.0.0.1/']
+#
+ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
@@ -75,10 +75,20 @@ WSGI_APPLICATION = 'howtohuynh.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'mydatabase',
+            'USER': 'kenny',
+            'PASSWORD': 'huynh',
+            'HOST': '127.0.0.1',
+            'PORT': '5432',
     }
 }
 
