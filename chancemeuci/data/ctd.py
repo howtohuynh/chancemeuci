@@ -28,33 +28,4 @@ def csv_to_dict(file: str, dictKeyList: list) -> dict:
     return result
 
 
-# appliedList = ['applied', 'admitted', 'enrolled', 'selectivity_rate', 'yield_rate']
-# satList = ['verbal', 'math', 'verbal + math', 'writing', 'verbal + math + writing']
-# gpaList = ['gpa']
-# highschoolList = ['admitted']
-#
-# school = csv_to_dict('csv_files/school.csv', appliedList)
-# major = csv_to_dict('csv_files/major.csv', appliedList)
-# gender = csv_to_dict('csv_files/gender.csv', appliedList)
-# high_school = csv_to_dict('csv_files/high_school.csv', highschoolList)
-# residency = csv_to_dict('csv_files/residency.csv', appliedList)
-# ethnicity = csv_to_dict('csv_files/ethnicity.csv', appliedList)
-# print(ethnicity)
-# school_gender = csv_to_dict('csv_files/school_gender.csv', appliedList)
-# school_ethnicity = csv_to_dict('csv_files/school_ethnicity.csv', appliedList)
-#
-# gpa_school = csv_to_dict('csv_files/gpa_school.csv', gpaList)
-# gpa_major = csv_to_dict('csv_files/gpa_major.csv', gpaList)
-# gpa_gender = csv_to_dict('csv_files/gpa_gender.csv', gpaList)
-# gpa_ethnicity = csv_to_dict('csv_files/gpa_ethnicity.csv', gpaList)
-# gpa_school_gender = csv_to_dict('csv_files/gpa_school_gender.csv', gpaList)
-# gpa_school_ethnicity = csv_to_dict('csv_files/gpa_school_ethnicity.csv', gpaList)
-#
-# sat_school = csv_to_dict('csv_files/sat_school.csv', satList)
-# sat_major = csv_to_dict('csv_files/sat_major.csv', satList)
-# sat_gender = csv_to_dict('csv_files/sat_gender.csv', satList)
-# sat_ethnicity = csv_to_dict('csv_files/sat_ethnicity.csv', satList)
-# sat_school_gender = csv_to_dict('csv_files/sat_school_gender.csv', satList)
-# sat_school_ethnicity = csv_to_dict('csv_files/sat_school_ethnicity.csv', satList)
-
 
