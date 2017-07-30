@@ -6,7 +6,7 @@ from chancemeuci.forms import ApplicantForm
 from chancemeuci.data.ctd import csv_to_dict
 from chancemeuci.data.calculator import calculate
 
-
+# List to be used to convert .csv files to dict
 appliedList = ['applied', 'admitted', 'enrolled', 'selectivity_rate', 'yield_rate', 'gpa', 'verbal', 'math',
                'writing']
 appliedList2 = ['applied', 'admitted', 'enrolled', 'selectivity_rate', 'yield_rate']
@@ -57,18 +57,7 @@ class index(CreateView):
         return render(request, self.template_name, args)
 
 
-def datasource(request):
-    return render(request, 'chancemeuci/datasource.html')
-
-def development(request):
-    return render(request, 'chancemeuci/development.html')
-
-def comments(request):
-    return render(request, 'chancemeuci/comments.html')
-
-def notes(request):
-    return render(request, 'chancemeuci/notes.html')
-
+# Returns the average acceptance rate of factors that are weighed on a lower scale
 def lowWeight(d: dict) -> float:
     low_weight = []
     x = d['major'].split(" | ")[0]
@@ -83,6 +72,7 @@ def lowWeight(d: dict) -> float:
     low_weight.append((('Residency', d['residency']), residency[d['residency']]))
     return low_weight
 
+# Returns the average acceptance rate of factors that are weighed on a higher scale
 def highWeight(d: dict) -> float:
     high_weight = []
     high_weight.append((('UC GPA', d['uc_gpa']), uc_gpa[d['uc_gpa']]))
@@ -91,6 +81,7 @@ def highWeight(d: dict) -> float:
     high_weight.append((('SAT Writing', d['sat_writing']), sat_writing[d['sat_writing']]))
     return high_weight
 
+# Returns a string containing information about the amount of students enrolled from a certain high school
 def highSchool(d: dict) -> str:
     if d['high_school'] != 'OTHER / NOT LISTED':
         string = "In 2016, {} people from {} enrolled at UC Irvine.".format(high_school[d['high_school']]['admitted'], d['high_school'].title())

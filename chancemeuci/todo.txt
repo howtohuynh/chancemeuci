@@ -1,4 +1,0 @@
-- finish other views
-- Make code look nicer
-    - views.py (try to make code more condensed, change urls to class views)
-    - urls.py (same as above)
